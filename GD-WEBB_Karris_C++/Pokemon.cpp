@@ -7,6 +7,8 @@ Pokemon::Pokemon(std::string name, std::string description, std::vector<std::str
     mDescription = description;
     mLife = 100;
     mAbilities = Abilities;
+    inBall = true;
+    
 }
 Pokemon::~Pokemon() {}
 
@@ -18,7 +20,7 @@ void Pokemon::takeDamage(int damage)
 {
     mLife = mLife - damage;
 }
-void Pokemon::heal(Pokemon self) 
+void Pokemon::heal() 
 {
     mLife = mLife + 30;
 }
@@ -27,9 +29,12 @@ void Pokemon::attack(Pokemon enemy)
     enemy.takeDamage(10);
 }
 
-void Pokemon::
+void Pokemon::exitBall() 
+{
+    inBall = false;
+}
 
-void Pokemon::SetAbility(std::string ability)
+void Pokemon::setAbility(std::string ability)
 {
     mAbilities.push_back(ability);
 }

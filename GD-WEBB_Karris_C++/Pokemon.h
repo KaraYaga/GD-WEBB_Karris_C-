@@ -7,10 +7,13 @@ class Pokemon
 private:
 	std::string mName;
 	std::string mDescription;
+	std::vector<std::string>mAbilities;
+
 	int mLife;
 	int mHeal;
 	int mDamage;
-	std::vector<std::string>mAbilities;
+
+	bool inBall;
 
 public:
 	Pokemon(std::string name, std::string description, std::vector<std::string>Abilities);
@@ -19,10 +22,11 @@ public:
 	std::string getDescription();
 
 	void takeDamage(int life);
-	void heal(Pokemon self);
+	void heal();
 	void attack(Pokemon enemy);
+	void exitBall();
 
-	void SetAbility(std::string ability);
+	void setAbility(std::string ability);
 
 };
 
