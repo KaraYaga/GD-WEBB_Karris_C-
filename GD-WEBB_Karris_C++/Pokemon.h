@@ -5,18 +5,24 @@
 class Pokemon
 {
 private:
-	std::string pokemonName;
-	std::string pokemonDescription;
-	int life;
-	std::vector<std::string>Abilities;
+	std::string mName;
+	std::string mDescription;
+	int mLife;
+	int mHeal;
+	int mDamage;
+	std::vector<std::string>mAbilities;
 
 public:
-	Pokemon(std::string name, std::string description, std::string Abilities);
+	Pokemon(std::string name, std::string description, std::vector<std::string>Abilities);
 	~Pokemon();
 	std::string getName();
 	std::string getDescription();
-	std::string getLife();
-	void SetAbility(std::string Ability);
+
+	void takeDamage(int life);
+	void heal(Pokemon self);
+	void attack(Pokemon enemy);
+
+	void SetAbility(std::string ability);
 
 };
 

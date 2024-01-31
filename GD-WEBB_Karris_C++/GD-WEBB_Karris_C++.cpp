@@ -102,3 +102,8 @@ int main()
 //assigns values to every element.
 //Type* arrayName == new Type[size]{ ... };	//New array on the heap (not recommended)
 
+//REFERENCES TO OBJECTS
+//The default behaviour for a function is to make a copy of the objects given in parameters.
+//When we want to have a change done to an instance of an object through a method belonging to another class,
+//we pass the reference of the object as a parameter.I use the Type name followed by&
+
