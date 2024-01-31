@@ -7,10 +7,19 @@ void EarnMoney(int* wallet, int wage) //The star points to the Address, not the 
 {
 	*wallet += wage;
 	//wallet = wallet + wage;
+	//*wallet = wages are added to wallet when wallet is called in bankAccount
 
 	*wallet -= (int)(wage / 4);
 	//Taxation
+	//*wallet = taxes are now deducted from the wallet when wallet is called in bankAccount
 }
+//Function EarnMoney
+void EarnMoneyByRef(int& wallet, int wage) //By Ref, and & for the int skips needing a * as the ref just takes all things associated tih &
+{
+	wallet += wage;
+	wallet -= (int)(wage / 4);
+}
+
 
 //Function say hi
 int main()
@@ -38,7 +47,8 @@ int main()
 	//Establishing a value
 
 	int* bankAccount = &money;
-	//Stores the address of money in BankAccount
+	//Stores the variable of money in BankAccount
+	//int* stores the variables of wallet in bankAccount
 
 	cout << "Your account name " << name << " is stored in : " << &name << endl;
 	cout << "Your balance " << money << " is stored in : " << &money << endl;
@@ -81,3 +91,14 @@ int main()
 //int* ptrX = &x;
 //cout << ptrX;	//Displays the address of the variable x
 //cout << *prtX;		//Displays 12, the content of the pointed variable (x)
+//delete myPtr; = Destroys Pointers
+
+//ARRAYS
+//Arrays can be used for any type of data.
+//They are created by using :
+//Type arrayName[size];	//Creates an array of objects of type Type
+//Type arrayName[size]{ value }; //Creates an array of objects of type Type and assigns the value to every element.
+//Type arrayName[n]{ value0, value1,.....,valuen - 1 };//Creates an array and
+//assigns values to every element.
+//Type* arrayName == new Type[size]{ ... };	//New array on the heap (not recommended)
+
