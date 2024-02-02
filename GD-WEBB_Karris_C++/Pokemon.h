@@ -5,7 +5,7 @@
 //.h = TABLE OF CONTENTS FOR .cpp
 class Pokemon
 {
-private:
+public:
 	std::string mName;
 	std::string mDescription;
 	std::vector<std::string>mAbilities;
