@@ -2,6 +2,7 @@
 #include <iostream>
 #include<vector>
 
+//.h = TABLE OF CONTENTS FOR .cpp
 class Pokemon
 {
 private:

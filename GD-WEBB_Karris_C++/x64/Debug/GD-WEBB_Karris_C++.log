@@ -1,2 +1,3 @@
 ﻿  GD-WEBB_Karris_C++.cpp
-  GD-WEBB_Karris_C++.vcxproj -> C:\Users\karris.webb\GD-WEBB_Karris_C++\x64\Debug\GD-WEBB_Karris_C++.exe
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Users\karris.webb\Documents\GitHub\GD-WEBB_Karris_C-\x64\Debug\GD-WEBB_Karris_C++.exe : fatal error LNK1120: 1 unresolved externals

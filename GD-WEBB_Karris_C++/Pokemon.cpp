@@ -1,6 +1,6 @@
 #include "Pokemon.h"
 
-
+//.cpp = BOOK OF INFORMATION FOR .h
 Pokemon::Pokemon(std::string name, std::string description, std::vector<std::string>Abilities)
 {
     mName = name;
