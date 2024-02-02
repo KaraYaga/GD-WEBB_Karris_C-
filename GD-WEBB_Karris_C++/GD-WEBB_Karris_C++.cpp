@@ -2,7 +2,7 @@
 using namespace std; //Without using this you do not have access to the std vocabulary and must type things such as "std::cout"
 
 //Function Fine Pokemon
-p Pokemon()
+callPokemon()
 {
 	cout << "Hello there! What would you like to name your Pokemon?" << endl;
 
